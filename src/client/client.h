@@ -2,8 +2,8 @@
 //      Tomas Petras Rupsys
 //
 
-#ifndef server_H
-#define server_H
+#ifndef client_H
+#define client_H
 
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -15,13 +15,9 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "processor.h"
-
-#define MAX_CLIENTS 10
 #define MAX_BUFFER_LEN 1024
 #define SERVER_PORT 65000
-#define SLA 500
 
-void start_server();
+void start_client();
 
 #endif
